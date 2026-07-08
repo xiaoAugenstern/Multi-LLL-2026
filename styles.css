@@ -381,6 +381,19 @@ dd {
   font-weight: 700;
 }
 
+.section-heading-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 26px;
+  flex-wrap: wrap;
+}
+
+.section-heading-row h2 {
+  margin: 0;
+}
+
 .platform-note {
   display: flex;
   flex-wrap: wrap;
@@ -393,9 +406,13 @@ dd {
 }
 
 #shared-task .platform-note {
-  max-width: 760px;
-  margin: 22px auto 0;
-  justify-content: center;
+  margin: 0;
+}
+
+.heading-platform {
+  padding: 10px 12px;
+  border-left-width: 4px;
+  font-size: 15px;
 }
 
 .platform-note strong {
@@ -420,8 +437,8 @@ dd {
 }
 
 .overview-figure {
-  margin: -6px auto 36px;
-  max-width: 960px;
+  margin: -4px auto 32px;
+  max-width: 820px;
 }
 
 .overview-figure img {
@@ -602,6 +619,7 @@ th {
 
 .organizer-photo img {
   border-radius: inherit;
+  transform: scale(0.86);
 }
 
 .organizer-photo .photo-fallback {
@@ -668,8 +686,8 @@ th {
 
 .committee-list {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 8px 28px;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 7px 16px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -678,11 +696,12 @@ th {
 .committee-list li {
   display: grid;
   gap: 1px;
-  padding: 0 0 8px;
+  padding: 0 0 7px;
   border: 0;
   border-bottom: 1px solid rgba(90, 115, 132, 0.2);
   background: transparent;
-  font-size: 15px;
+  font-size: 13px;
+  line-height: 1.25;
 }
 
 .committee-list span {
@@ -733,9 +752,12 @@ th {
   }
 
   .timeline-columns,
-  .keynote-card,
-  .committee-list {
+  .keynote-card {
     grid-template-columns: 1fr;
+  }
+
+  .committee-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .portrait-wrap {
@@ -777,6 +799,10 @@ th {
   .speakers,
   .organizers {
     grid-template-columns: 1fr;
+  }
+
+  .committee-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .timeline-card,
