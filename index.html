@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Multi-LLL 2026</title>
+  <meta name="description" content="Workshop on Multi-modality and Multi-lingual Language Learning, in conjunction with AACL-IJCNLP 2026.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Multi-LLL 2026 home">
+      <span class="brand-mark">ML</span>
+      <span>Multi-LLL 2026</span>
+    </a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#about">Home</a>
+      <a href="#cfp">Call for Papers</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#shared-task">Shared Task</a>
+      <a href="#speakers">Speakers</a>
+      <a href="#organizers">Organizers</a>
+      <a href="#submission">Submission</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero" aria-label="Workshop introduction">
+      <img src="assets/hero-hengqin.png" alt="" aria-hidden="true">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">In Conjunction with AACL-IJCNLP 2026</p>
+        <h1>The Workshop on Multi-modality and Multi-lingual Language Learning</h1>
+        <p class="tagline">Harnessing technology to advance inclusive, multi-modal, and multilingual language learning for a connected world.</p>
+        <p class="event-meta">AACL 2026 first-choice venue | One full day | Zhuhai, China and online</p>
+        <div class="hero-actions" aria-label="Quick links">
+          <a href="#timeline">
+            <span>Important Dates</span>
+            <small>Shared task timeline</small>
+          </a>
+          <a href="#submission">
+            <span>Paper Submission</span>
+            <small>Guidelines and links</small>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-inner narrow">
+        <h2>Workshop Topic</h2>
+        <p>Human communication is inherently multi-modal, combining spoken words, facial expressions, voice, body language, and visual context. Multi-lingual language learning helps bridge communication gaps in multicultural societies and supports more inclusive education.</p>
+        <p>This workshop focuses on multi-modality and multi-lingual language learning, including keynote and paper presentations as well as a shared task challenge. It aims to bring together researchers from NLP, computer vision, speech, education, and AI to investigate innovation in language learning for English, Chinese, and other low-resource languages.</p>
+        <p>Research on diverse languages promotes linguistic diversity, supports underrepresented learner populations, and yields insights applicable to education and everyday communication settings.</p>
+      </div>
+    </section>
+
+    <section id="cfp" class="section section-tint">
+      <div class="section-inner">
+        <h2>Call for Papers</h2>
+        <p class="lead">We invite high-quality theoretical and experimental submissions on AI topics for language education and language learning.</p>
+        <div class="topic-grid">
+          <div>
+            <h3>Emerging Technology</h3>
+            <p>Multi-modal and multi-lingual language learning systems, foundation models for education, and adaptive tools for diverse learners.</p>
+          </div>
+          <div>
+            <h3>Evaluation</h3>
+            <p>Benchmarks, diagnostic methods, shared-task systems, and evaluation frameworks for language learning technologies.</p>
+          </div>
+          <div>
+            <h3>Learning Tools</h3>
+            <p>Intelligent tutoring, feedback generation, writing support, grammar correction, and applications for real-world education.</p>
+          </div>
+          <div>
+            <h3>Case Studies</h3>
+            <p>Empirical studies on English, Chinese, low-resource languages, CFL learning, accessibility, and cross-linguistic transfer.</p>
+          </div>
+        </div>
+        <div class="notice">
+          <strong>Submission:</strong> Regular papers and ARR-reviewed papers will be managed through OpenReview. Regular papers should be submitted to <a href="https://openreview.net/group?id=aclweb.org/AACL-IJCNLP/2026/Workshop/NORA" target="_blank" rel="noopener">AACL-IJCNLP 2026 Workshop NORA</a>; ARR-reviewed papers should be committed through <a href="https://openreview.net/group?id=aclweb.org/AACL-IJCNLP/2026/Workshop/NORA_ARR_Commitment" target="_blank" rel="noopener">AACL-IJCNLP 2026 Workshop NORA ARR Commitment</a>.
+        </div>
+      </div>
+    </section>
+
+    <section id="timeline" class="section">
+      <div class="section-inner">
+        <h2>Timeline</h2>
+        <p class="deadline-note">Note: All deadlines are <a href="https://time.is/Anywhere_on_Earth" target="_blank" rel="noopener">Anywhere on Earth (AoE)</a>.</p>
+        <div class="timeline-columns single">
+          <div class="timeline-card">
+            <h3>Shared Task</h3>
+            <ol class="timeline-list">
+              <li><span>Training data release and call for participants</span><time datetime="2026-07-30">July 30, 2026</time></li>
+              <li><span>Test data release</span><time datetime="2026-08-28">August 28, 2026</time></li>
+              <li><span>Evaluation results announced by organizers</span><time datetime="2026-08-30">August 30, 2026</time></li>
+              <li><span>System paper deadline</span><time datetime="2026-09-08">September 8, 2026</time></li>
+              <li><span>Notification</span><time datetime="2026-09-15">September 15, 2026</time></li>
+              <li><span>Camera-ready</span><time datetime="2026-09-22">September 22, 2026</time></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="shared-task" class="section">
+      <div class="section-inner">
+        <h2>Shared Task: VisCGEC-v2.0</h2>
+        <p class="lead">Given an image of handwritten Chinese text, systems identify erroneous regions and produce linguistically correct revisions.</p>
+        <figure class="overview-figure">
+          <img src="assets/overview-pages/overview-1.jpg" alt="Overview of the Visual Chinese Grammatical Error Correction shared task">
+        </figure>
+        <div class="split">
+          <div>
+            <h3>Tracks</h3>
+            <ul class="clean-list">
+              <li><strong>Sentence-Level Track:</strong> single-sentence handwritten inputs and localized error correction.</li>
+              <li><strong>Paragraph-Level Track:</strong> multi-sentence handwritten paragraphs requiring broader discourse context.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Dataset Statistics</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Images</th>
+                  <th>Train</th>
+                  <th>Dev</th>
+                  <th>Test</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Sentence-Level</td>
+                  <td>1960</td>
+                  <td>245</td>
+                  <td>246</td>
+                </tr>
+                <tr>
+                  <td>Paragraph-Level</td>
+                  <td>350</td>
+                  <td>-</td>
+                  <td>88</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <p>The task will use complementary metrics, including sentence-level GEC evaluation and edit-level evaluation over bounding boxes, correction text, and edit type.</p>
+        <div class="platform-note">
+          <strong>Shared task platforms</strong>
+          <a href="https://codalab.lisn.upsaclay.fr/competitions/23241" target="_blank" rel="noopener">CodaLab</a>
+          <a href="https://tianchi.aliyun.com/competition" target="_blank" rel="noopener">Tianchi Competition</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="speakers" class="section section-dark">
+      <div class="section-inner">
+        <h2>Tentative Keynote Speakers</h2>
+        <div class="speaker-stack">
+          <article class="keynote-card">
+            <div class="portrait-wrap">
+              <img src="assets/photos/speakers/zitao-liu.jpg" alt="Zitao Liu" onerror="this.hidden=true; this.nextElementSibling.hidden=false;">
+              <div class="photo-fallback" hidden>ZL</div>
+            </div>
+            <div>
+              <h3>Zitao Liu</h3>
+              <p>Zitao Liu is the Dean of Guangdong Institute of Smart Education, Jinan University, Guangzhou, China. His research is in the area of machine learning, and includes contributions in the areas of artificial intelligence in education and educational data mining. He has published over 100 papers in highly ranked conference proceedings, such as NeurIPS, CVPR, AAAI, WWW, etc. and his applied research has resulted in more than 50 technology transfer and patents.</p>
+              <p>Zitao serves as the Executive Committee of the International AI in Education Society, CCF Senior member and top tier AI conference/workshop organizers/program committees. He was the champions and runners-up of many competitions at top AI venues, including NeurIPS, EMNLP and Ubicomp. He is a recipient of ACM and CCF Distinguished Speaker and Beijing Nova Program 2020. Before joining TAL, Zitao was a senior research scientist at Pinterest and received his Ph.D degree in Computer Science from University of Pittsburgh.</p>
+            </div>
+          </article>
+          <article class="keynote-card">
+            <div class="portrait-wrap">
+              <img src="assets/photos/speakers/zhongqing-wang.jpg" alt="Zhongqing Wang" onerror="this.hidden=true; this.nextElementSibling.hidden=false;">
+              <div class="photo-fallback" hidden>ZW</div>
+            </div>
+            <div>
+              <h3>Zhongqing Wang</h3>
+              <p>Zhongqing Wang is an Associate Professor at the School of Computer Science and Technology, Soochow University. His primary research interests span natural language processing, sentiment analysis, and information extraction. He has published over 50 papers in top-tier conferences and journals in AI and NLP.</p>
+              <p>He currently leads and participates in multiple projects funded by the National Natural Science Foundation of China. He serves as a Senior Program Committee Member or Area Chair for prestigious international conferences including ACL, IJCAI, AAAI, EMNLP, and COLING.</p>
+            </div>
+          </article>
+          <article class="keynote-card">
+            <div class="portrait-wrap">
+              <img src="assets/photos/speakers/yinghui-li.jpg" alt="Yinghui Li" onerror="this.hidden=true; this.nextElementSibling.hidden=false;">
+              <div class="photo-fallback" hidden>YL</div>
+            </div>
+            <div>
+              <h3>Yinghui Li</h3>
+              <p>Yinghui Li is a Senior Researcher at Tencent Youtu Lab. He received his B.Eng. and Ph.D. from Tsinghua University, and was a visiting scholar at the University of Illinois Chicago, working with Prof. Philip S. Yu. Dr. Li's research lies at the intersection of large language models, multimodal learning, multilingual language understanding, and AI evaluation.</p>
+              <p>His work aims to develop and assess intelligent systems that can learn from heterogeneous information sources, reason across languages and modalities, and generalize reliably to complex real-world scenarios. Dr. Li has published over 60 papers in leading venues such as ACM Computing Surveys, TKDE, ICML, ICLR, NeurIPS, SIGIR, ACL, AAAI, and EMNLP, receiving more than 3,000 citations on Google Scholar. His contributions have been recognized with multiple honors, including Outstanding Ph.D. Graduate of Beijing, the Best Paper Award at the AAAI 2025 Workshop, the SemEval 2023 Best System Paper Award, an ESI Highly Cited Paper, the Silver Medal at the International Exhibition of Inventions of Geneva, and several other academic awards.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="organizers" class="section">
+      <div class="section-inner">
+        <h2>Organizers</h2>
+        <div class="person-grid organizers">
+          <article class="person compact"><div class="organizer-photo"><img src="assets/photos/organizers/xiaoman-wang.jpg" alt="Xiaoman Wang" onerror="this.hidden=true; this.nextElementSibling.hidden=false;"><div class="photo-fallback" hidden>XW</div></div><h3>Xiaoman Wang</h3><p>East China Normal University</p></article>
+          <article class="person compact"><div class="organizer-photo"><img src="assets/photos/organizers/qianyu-wang.jpg" alt="Qianyu Wang" onerror="this.hidden=true; this.nextElementSibling.hidden=false;"><div class="photo-fallback" hidden>QW</div></div><h3>Qianyu Wang</h3><p>East China Normal University</p></article>
+          <article class="person compact"><div class="organizer-photo"><img src="assets/photos/organizers/zhengyuan-liu.jpg" alt="Zhengyuan Liu" onerror="this.hidden=true; this.nextElementSibling.hidden=false;"><div class="photo-fallback" hidden>ZL</div></div><h3>Zhengyuan Liu</h3><p>A*STAR, Singapore</p></article>
+          <article class="person compact"><div class="organizer-photo"><img src="assets/photos/organizers/nancy-chen.jpg" alt="Nancy F. Chen" onerror="this.hidden=true; this.nextElementSibling.hidden=false;"><div class="photo-fallback" hidden>NC</div></div><h3>Nancy F. Chen</h3><p>A*STAR, Singapore</p></article>
+          <article class="person compact"><div class="organizer-photo"><img src="assets/photos/organizers/zheng-yuan.jpg" alt="Zheng Yuan" onerror="this.hidden=true; this.nextElementSibling.hidden=false;"><div class="photo-fallback" hidden>ZY</div></div><h3>Zheng Yuan</h3><p>University of Sheffield</p></article>
+          <article class="person compact"><div class="organizer-photo"><img src="assets/photos/organizers/yunshi-lan.jpg" alt="Yunshi Lan" onerror="this.hidden=true; this.nextElementSibling.hidden=false;"><div class="photo-fallback" hidden>YL</div></div><h3>Yunshi Lan</h3><p>East China Normal University</p></article>
+          <article class="person compact"><div class="organizer-photo"><img src="assets/photos/organizers/jing-jiang.jpg" alt="Jing Jiang" onerror="this.hidden=true; this.nextElementSibling.hidden=false;"><div class="photo-fallback" hidden>JJ</div></div><h3>Jing Jiang</h3><p>Australian National University</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="submission" class="section section-tint">
+      <div class="section-inner prose">
+        <h2>Submission Guidelines</h2>
+        <h3>General Policy</h3>
+        <h4>General Information</h4>
+        <p>The workshop is archivable, and its proceedings will be published in the <a href="https://aclanthology.org/" target="_blank" rel="noopener">ACL Anthology</a>. All accepted and presented papers will appear in the workshop proceedings. At least one of the authors of the accepted papers must register for the workshop and present their submission(s) to be included in the workshop proceedings. The workshop will be a hybrid 1-day event at AACL-IJCNLP 2026.</p>
+        <h4>Use of Generative AI Policy</h4>
+        <p>This workshop adheres to the ACL's <a href="https://www.aclweb.org/adminwiki/index.php/ACL_Policy_on_Publication_Ethics#Guidelines_for_Generative_Assistance_in_Authorship" target="_blank" rel="noopener">Guidelines for Generative Assistance in Authorship</a>. Please familiarise yourself with the policy and include a Declaration on Generative AI section in your manuscript.</p>
+        <div class="warning">
+          Manuscripts containing hallucinated citations, fabricated references, or unsupported factual claims may be desk-rejected. Authors are responsible for checking citations and references before submission.
+        </div>
+        <h4>Dual Submission Policy</h4>
+        <p>Dual submissions, such as submitting the same manuscript to more than one venue (i.e. workshop, conference, journal, etc.), are not allowed.</p>
+        <h4>Publication Ethics Policy</h4>
+        <p>All submissions must adhere to <a href="https://www.aclweb.org/adminwiki/index.php/ACL_Policy_on_Publication_Ethics" target="_blank" rel="noopener">ACL Policy on Publication Ethics</a>.</p>
+        <h4>Withdrawal Policy</h4>
+        <p>Failing to register will lead to a paper withdrawal.</p>
+        <h4>Additional Information</h4>
+        <p>Submissions are editable, including authorship, until the deadline. No authorship change is allowed after submission.</p>
+
+        <h3>Submission Tracks</h3>
+        <p>There are four types of submissions covering the entire workshop topics spectrum:</p>
+        <ol class="guideline-list">
+          <li><strong>Research Papers (max. 8 pages):</strong> presenting novel research addressing the above and similar topics.</li>
+          <li><strong>Position &amp; Demo Papers (max. 6 pages):</strong> encouraging papers describing significant work in progress, late-breaking results or ideas, as well as functional systems relevant to the community.</li>
+          <li><strong>Industry &amp; Use Case Presentations (max. 5 pages):</strong> in which industry experts can present and discuss practical solutions, use cases, and best practices at any stage of implementation.</li>
+          <li><strong>Short Papers (max. 2 pages):</strong> presenting research topics, works in progress, and practical applications.</li>
+        </ol>
+        <p>These page limits only apply to the main body of the paper. Authors may include an unlimited but reasonable number of pages of references and appendices.</p>
+        <p>Papers must include a mandatory section on the <strong>Limitations of the Work</strong>, placed after the conclusions and before the references. Authors must also include a mandatory <strong>Declaration on Generative AI</strong> section in the paper. Authors may optionally include a section discussing ethical considerations and concerns regarding their research. Each submission must be submitted to only one track, the most suitable one.</p>
+
+        <h3>Submission Format</h3>
+        <ol class="guideline-list">
+          <li>Submissions are required to use the official ACL style template, available <a href="https://github.com/acl-org/acl-style-files" target="_blank" rel="noopener">here</a>. Please follow the paper formatting guidelines general to "*ACL" conferences available <a href="https://acl-org.github.io/ACLPUB/formatting.html" target="_blank" rel="noopener">here</a>. Authors may not modify these style files or use templates designed for other conferences.</li>
+          <li>Each submission shall be one single PDF file, including the references and appendices.</li>
+          <li>Supplementary materials of reasonable number and size may be included, but they are optional, and reviewers are not required to review these materials.</li>
+          <li>Submissions that do not adhere to the specified styles, including paper size, font size restrictions, and margin width, will be desk-rejected.</li>
+          <li>The reviewing process will be double-blind, wherein each paper will be reviewed by at least three reviewers. A meta-review will be provided in case of any disagreements. The final decision of acceptance/rejection will be made in consensus by the Chairs.</li>
+        </ol>
+
+        <h3>ARR Papers Resubmission</h3>
+        <p>In addition to the regular submissions specified in this CFP, we welcome resubmissions from ACL Rolling Review (ARR), as long as the topics are relevant to our workshop. Authors of papers that were submitted to ARR and have their meta review ready may submit their papers and reviews for consideration for the workshop by the ARR commitment deadline.</p>
+        <p>Authors can resubmit their reviewed papers from any previous 2026 ARR cycles. Specifically, reviewed and rejected submissions from ACL flagged conferences happening during 2026 and going through ARR 2026 cycles are welcome. Authors will be notified by the Notification of Acceptance date.</p>
+
+        <h3>Submission Link</h3>
+        <p>All submissions will be managed through OpenReview via dedicated submission websites:</p>
+        <ul class="guideline-list">
+          <li>Regular papers should be submitted to <a href="https://openreview.net/group?id=aclweb.org/AACL-IJCNLP/2026/Workshop/NORA" target="_blank" rel="noopener">AACL-IJCNLP 2026 Workshop NORA</a>.</li>
+          <li>ARR-reviewed paper submissions shall be committed through <a href="https://openreview.net/group?id=aclweb.org/AACL-IJCNLP/2026/Workshop/NORA_ARR_Commitment" target="_blank" rel="noopener">AACL-IJCNLP 2026 Workshop NORA ARR Commitment</a>.</li>
+        </ul>
+        <p><strong>Note:</strong> Please be aware of OpenReview's moderation policy when creating new profiles without an institutional email.</p>
+
+        <h3>Presentation</h3>
+        <p>All accepted papers shall be presented at the conference either in-person or remotely. Accepted papers will be presented as posters only or as posters plus oral presentation. Authors required to deliver an oral presentation will be notified accordingly.</p>
+      </div>
+    </section>
+
+    <section id="pc" class="section section-tint">
+      <div class="section-inner">
+        <h2>Program Committee</h2>
+        <ul class="committee-list">
+          <li><strong>Ahmed Karim</strong><span>Hassana Labs</span></li>
+          <li><strong>Andrew Caines</strong><span>University of Cambridge</span></li>
+          <li><strong>Bashar Alhafni</strong><span>MBZUAI</span></li>
+          <li><strong>Chris J. Bryant</strong><span>Writer Inc.</span></li>
+          <li><strong>Chunyang Wang</strong><span>East China Normal University</span></li>
+          <li><strong>David Strohmaier</strong><span>University of Cambridge</span></li>
+          <li><strong>Diana Galvan-Sosa</strong><span>University of Cambridge</span></li>
+          <li><strong>Gabrielle Gaudeau</strong><span>University of Cambridge</span></li>
+          <li><strong>Jiazheng Li</strong><span>King's College London</span></li>
+          <li><strong>Jing Xu</strong><span>Cambridge University Press &amp; Assessment</span></li>
+          <li><strong>Judy Wang</strong><span>Hosei University</span></li>
+          <li><strong>Lei Shi</strong><span>Newcastle University</span></li>
+          <li><strong>Luca Benedetto</strong><span>Institut polytechnique de Paris &amp; Telecom SudParis</span></li>
+          <li><strong>Mariano Felice</strong><span>British Council</span></li>
+          <li><strong>Michael Hofmeyr</strong><span>Tokyo University of Science</span></li>
+          <li><strong>Michael Zock</strong><span>Aix-Marseille University</span></li>
+          <li><strong>Michail Korakakis</strong><span>University of Cambridge</span></li>
+          <li><strong>Mingrui Ye</strong><span>King's College London</span></li>
+          <li><strong>Nguyen Li</strong><span>Nanyang Technological University</span></li>
+          <li><strong>Robert Swier</strong><span>Kindai University</span></li>
+          <li><strong>Roman Yangarber</strong><span>University of Helsinki</span></li>
+          <li><strong>Siya Qi</strong><span>King's College London</span></li>
+          <li><strong>Stella Xin Yin</strong><span>Nanyang Technological University</span></li>
+          <li><strong>Suchir Salhan</strong><span>University of Cambridge</span></li>
+          <li><strong>Thierry Geoffre</strong><span>University of Luxembourg</span></li>
+          <li><strong>Xuesong Lu</strong><span>East China Normal University</span></li>
+          <li><strong>Yan Wang</strong><span>East China Normal University</span></li>
+          <li><strong>Yuan Gao</strong><span>University of Cambridge</span></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>The Workshop on Multi-modality and Multi-lingual Language Learning (Multi-LLL 2026)</p>
+    <p>Contact: <a href="mailto:xmwang@stu.ecnu.edu.cn">xmwang@stu.ecnu.edu.cn</a></p>
+  </footer>
+</body>
+</html>
