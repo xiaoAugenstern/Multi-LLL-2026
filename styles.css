@@ -372,6 +372,10 @@ dd {
   background: var(--white);
 }
 
+.primary-timeline {
+  border-top-color: var(--coral);
+}
+
 .timeline-list {
   display: grid;
   gap: 14px;
@@ -653,6 +657,11 @@ th {
 .organizer-photo img {
   border-radius: inherit;
   object-position: center;
+}
+
+.organizer-photo img[src$="nancy-chen.jpg"],
+.organizer-photo img[src$="yunshi-lan.jpg"] {
+  transform: scale(0.86);
 }
 
 .organizer-photo .photo-fallback {
