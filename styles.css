@@ -202,7 +202,8 @@ h4 {
 }
 
 .meta-date::before {
-  content: "📅";
+  content: "9";
+  font-weight: 700;
 }
 
 .meta-venue::before {
