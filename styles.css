@@ -63,16 +63,14 @@ a {
   letter-spacing: 0;
 }
 
-.brand-mark {
-  display: grid;
-  width: 38px;
-  height: 38px;
-  place-items: center;
-  color: var(--white);
-  background: var(--brand);
+.brand-logo {
+  display: block;
+  width: 46px;
+  height: 46px;
+  border: 2px solid rgba(34, 110, 147, 0.24);
   border-radius: 50%;
-  font-size: 14px;
-  font-family: Merriweather, Georgia, serif;
+  background: var(--white);
+  object-fit: cover;
 }
 
 .nav {
@@ -659,9 +657,13 @@ th {
   object-position: center;
 }
 
-.organizer-photo img[src$="nancy-chen.jpg"],
 .organizer-photo img[src$="lanyunshi.png"] {
   transform: scale(0.86);
+}
+
+.organizer-photo img[src$="zhengyuan-liu.jpg"],
+.organizer-photo img[src$="nancy-chen.jpg"] {
+  transform: scale(1.1);
 }
 
 .organizer-photo .photo-fallback {
