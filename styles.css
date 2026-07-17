@@ -543,10 +543,10 @@ th {
 
 .keynote-card {
   display: grid;
-  grid-template-columns: 230px minmax(0, 1fr);
-  gap: 30px;
+  grid-template-columns: 124px minmax(0, 1fr);
+  gap: 22px;
   align-items: start;
-  padding: 28px;
+  padding: 22px;
   border: 1px solid rgba(255, 255, 255, 0.22);
   background: rgba(255, 255, 255, 0.1);
 }
@@ -562,6 +562,14 @@ th {
 .portrait-wrap {
   width: 100%;
   aspect-ratio: 3 / 4;
+}
+
+.speaker-note {
+  margin: -14px 0 28px;
+  color: #fff7e9;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .portrait-wrap img,
@@ -595,13 +603,49 @@ th {
   letter-spacing: 0;
 }
 
-.keynote-card h3 {
-  color: var(--white);
-  font-size: 26px;
+.keynote-copy {
+  align-self: start;
 }
 
-.keynote-card p {
-  margin: 10px 0 0;
+.keynote-card h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: var(--white);
+  font-size: 24px;
+}
+
+.bio-text {
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.bio-collapse {
+  display: inline;
+  margin: 0;
+}
+
+.bio-collapse summary {
+  display: inline;
+  color: #fff7e9;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.bio-collapse summary::marker {
+  color: var(--gold);
+}
+
+.bio-preview,
+.bio-collapse p {
+  margin: 0;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.bio-collapse p {
+  display: block;
+  margin-top: 8px;
 }
 
 .person {
@@ -823,7 +867,7 @@ th {
   }
 
   .portrait-wrap {
-    max-width: 260px;
+    max-width: 136px;
   }
 }
 
