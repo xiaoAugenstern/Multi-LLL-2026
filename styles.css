@@ -354,7 +354,7 @@ dd {
 
 .timeline-columns {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
   gap: 28px;
 }
 
@@ -368,6 +368,7 @@ dd {
   border: 1px solid var(--line);
   border-top: 6px solid var(--brand);
   background: var(--white);
+  overflow-wrap: break-word;
 }
 
 .primary-timeline {
@@ -398,6 +399,52 @@ dd {
 .timeline-list time {
   color: var(--brand-dark);
   white-space: nowrap;
+}
+
+.timeline-list .date-revision {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 6px 8px;
+  white-space: normal;
+}
+
+.timeline-list .timeline-one-line {
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+}
+
+.timeline-one-line .date-revision,
+.timeline-one-line del,
+.timeline-one-line .new-date {
+  white-space: nowrap;
+}
+
+.timeline-one-line .date-revision {
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.timeline-list del {
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.timeline-list .new-date {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 3px 10px;
+  color: var(--brand-dark);
+  background: rgba(244, 185, 66, 0.22);
+  border: 1px solid rgba(244, 185, 66, 0.48);
+  border-radius: 999px;
+  font-weight: 800;
+}
+
+.timeline-one-line .new-date {
+  min-height: 24px;
+  padding: 2px 7px;
 }
 
 .small-note {
