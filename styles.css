@@ -824,13 +824,103 @@ th {
   font-weight: 700;
 }
 
-.task-report-note {
-  margin: 22px auto 0;
-  padding: 18px 22px;
-  border-left: 6px solid var(--gold);
-  background: #fff8e6;
-  color: var(--ink);
+.task-awards {
+  margin-top: 32px;
+  padding: 26px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: linear-gradient(135deg, #f2f7f9, #fffdf8);
+}
+
+.task-eyebrow {
+  color: var(--brand-dark);
+  font-size: 12px;
   font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.task-awards h3 {
+  margin: 6px 0 20px;
+}
+
+#sentence-level-awards,
+#submission-format {
+  scroll-margin-top: 100px;
+}
+
+.award-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.award-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 22px 18px;
+  border: 1px solid var(--award-border);
+  border-radius: 12px;
+  background: var(--white);
+  box-shadow: 0 4px 14px rgba(30, 70, 90, 0.04);
+}
+
+.award-gold { --award-color: #86601f; --award-bg: #fff3d6; --award-border: #e8d1a2; }
+.award-silver { --award-color: #536879; --award-bg: #edf2f6; --award-border: #d5dfe7; }
+.award-bronze { --award-color: #955d3d; --award-bg: #f9eade; --award-border: #ead4c4; }
+
+.award-medal {
+  display: grid;
+  place-items: center;
+  flex: 0 0 48px;
+  height: 48px;
+  border: 1px solid var(--award-border);
+  border-radius: 50%;
+  color: var(--award-color);
+  background: var(--award-bg);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.award-place {
+  display: block;
+  color: var(--award-color);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.award-team {
+  display: block;
+  margin-top: 3px;
+  font-size: 22px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.task-report-note {
+  margin: 24px auto 0;
+  padding: 24px 28px;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--brand);
+  border-radius: 0 12px 12px 0;
+  background: #f7fafb;
+  color: var(--ink);
+}
+
+.task-report-note h3 { margin: 0 0 12px; }
+.task-report-note p { margin: 0 0 16px; }
+.task-report-note p:last-child { margin-bottom: 0; }
+.task-report-format { padding-top: 16px; border-top: 1px solid var(--line); }
+
+@media (max-width: 760px) {
+  .award-grid { grid-template-columns: 1fr; }
+  .task-awards { padding: 20px; }
+  .award-card { padding: 16px; }
+  .task-report-note { padding: 20px; }
 }
 
 .committee-list {
