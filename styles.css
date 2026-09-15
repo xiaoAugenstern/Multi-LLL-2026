@@ -1062,3 +1062,20 @@ th {
     white-space: normal;
   }
 }
+
+/* Keep the extended paper deadline readable within the timeline card. */
+.timeline-list .paper-deadline {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 8px;
+}
+
+.paper-deadline .date-revision {
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px 12px;
+}
+
+.paper-deadline del,
+.paper-deadline .new-date {
+  white-space: nowrap;
+}
