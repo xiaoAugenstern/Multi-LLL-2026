@@ -1079,3 +1079,21 @@ th {
 .paper-deadline .new-date {
   white-space: nowrap;
 }
+
+.registration-update {
+  margin: 0 0 28px;
+  background: #fff8e6;
+  border-radius: 0 10px 10px 0;
+}
+
+.registration-update strong {
+  color: var(--brand-dark);
+}
+
+.registration-update p {
+  margin: 6px 0 0;
+}
+
+.registration-update + .deadline-note {
+  margin-top: 0;
+}
