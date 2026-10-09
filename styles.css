@@ -1097,3 +1097,18 @@ th {
 .registration-update + .deadline-note {
   margin-top: 0;
 }
+
+.timeline-list .shared-task-date {
+  grid-template-columns: max-content max-content;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.shared-task-date .date-revision {
+  flex-wrap: nowrap;
+  align-items: center;
+  white-space: nowrap;
+}
