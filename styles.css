@@ -1132,3 +1132,5 @@ th {
   .program-meta { font-size: 15px; }
   .program-content h4 { font-size: 15px; }
 }
+
+.program-group .program-timing { margin: 4px 0 0; font-size: 13px; line-height: 1.5; font-weight: 400; color: #ffffff; }
