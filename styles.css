@@ -1134,3 +1134,5 @@ th {
 }
 
 .program-group .program-timing { margin: 4px 0 0; font-size: 13px; line-height: 1.5; font-weight: 400; color: #ffffff; }
+
+.program-poster-link { display: inline-block; margin-left: 8px; font-size: 13px; font-weight: 600; white-space: nowrap; }
